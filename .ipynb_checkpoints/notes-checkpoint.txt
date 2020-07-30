@@ -1,0 +1,36 @@
+BERT Notes (with transformers)
+
+1. Bert Input = Token Embedding + Segment Embedding + Positional Embedding
+2. [CLS] : The first token of every sequence. A classification token which is normally used in conjunction with a softmax layer for classification tasks. For anything else, it can be safely ignored.
+3. [SEP] : A sequence delimiter token which was used at pre-training for sequence-pair tasks (i.e. Next sentence prediction). Must be used when sequence pair tasks are required. When a single sequence is used it is just appended at the end.
+4. [MASK] : Token used for masked words. Only used for pre-training.
+5. 512 Tokens Limitation
+6. Pretraining is expensive,. load the pretrained model (BASE or LARGE)
+7. OR leverage transfer learning and then fine-tuning
+8. Some task (Mask Learning Model and Next Sentence Prediction)
+9. Other task --> add task specific layer
+10. General usage :
+	* installation
+	* Load data
+	* Bert Tokenizer
+	* Load Bert model
+	* compile model (loss, optimizer, etc)
+	* Fine tuned
+	* evaluate
+11. bert is overfitting pretty fast
+
+
+
+Questions :
+	1. can we used BERT by using not sentence corpus?
+
+
+Reference :
+https://www.youtube.com/watch?v=z6Kl52nh04U
+https://huggingface.co/blog/how-to-train
+https://mccormickml.com/2019/05/14/BERT-word-embeddings-tutorial/#3-extracting-embeddings
+https://www.youtube.com/watch?v=_eSGWNqKeeY&t=1727s
+https://medium.com/@adriensieg/text-similarities-da019229c894
+
+	
+	
