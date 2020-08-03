@@ -13,7 +13,7 @@ BERT Notes (with transformers)
 	* installation
 	* Load data
 	* Bert Tokenizer
-	* Load Bert model
+	* Load Bert model (you can do pretrained if you want)
 	* compile model (loss, optimizer, etc)
 	* Fine tuned
 	* evaluate
@@ -33,4 +33,8 @@ https://www.youtube.com/watch?v=_eSGWNqKeeY&t=1727s
 https://medium.com/@adriensieg/text-similarities-da019229c894
 
 	
-	
+
+pip install transformers
+
+if you have problem with importing transformer, try this :
+pip install tokenizers==0.7.0
